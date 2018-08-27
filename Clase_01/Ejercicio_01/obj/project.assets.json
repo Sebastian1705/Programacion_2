@@ -664,23 +664,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Seba\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\SUPERVISOR\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Seba\\Desktop\\Programacion_2\\Clase_01\\Ejercicio_01\\Ejercicio_01.csproj",
+      "projectUniqueName": "C:\\Users\\SUPERVISOR\\Desktop\\Programacion_2\\Clase_01\\Ejercicio_01\\Ejercicio_01.csproj",
       "projectName": "Ejercicio_01",
-      "projectPath": "C:\\Users\\Seba\\Desktop\\Programacion_2\\Clase_01\\Ejercicio_01\\Ejercicio_01.csproj",
-      "packagesPath": "C:\\Users\\Seba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Seba\\Desktop\\Programacion_2\\Clase_01\\Ejercicio_01\\obj\\",
+      "projectPath": "C:\\Users\\SUPERVISOR\\Desktop\\Programacion_2\\Clase_01\\Ejercicio_01\\Ejercicio_01.csproj",
+      "packagesPath": "C:\\Users\\SUPERVISOR\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SUPERVISOR\\Desktop\\Programacion_2\\Clase_01\\Ejercicio_01\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Seba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SUPERVISOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
