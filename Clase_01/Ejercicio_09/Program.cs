@@ -16,12 +16,12 @@ namespace Ejercicio_09
             {
                 for(int i = 0; i<numeroIngresado; i++)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine(imprimir);
-                    Console.WriteLine();
+                    // Console.WriteLine();
                     imprimir += "**";
                 }
             }
-
             Console.ReadKey();
         }
     }
