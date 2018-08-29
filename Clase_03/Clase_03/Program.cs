@@ -1,13 +1,12 @@
 ﻿using System;
 
-namespace Ejercicio_13
+namespace Clase_03
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Title = "Ejercicio_13";
-
+            Console.WriteLine("Hello World!");
         }
     }
 }

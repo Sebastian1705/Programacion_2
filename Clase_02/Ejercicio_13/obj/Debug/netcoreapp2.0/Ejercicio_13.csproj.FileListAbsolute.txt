@@ -1,0 +1,11 @@
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\obj\Debug\netcoreapp2.0\Ejercicio_13.csprojAssemblyReference.cache
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\obj\Debug\netcoreapp2.0\Ejercicio_13.csproj.CoreCompileInputs.cache
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\obj\Debug\netcoreapp2.0\Ejercicio_13.AssemblyInfoInputs.cache
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\obj\Debug\netcoreapp2.0\Ejercicio_13.AssemblyInfo.cs
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\bin\Debug\netcoreapp2.0\Ejercicio_13.deps.json
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\bin\Debug\netcoreapp2.0\Ejercicio_13.runtimeconfig.json
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\bin\Debug\netcoreapp2.0\Ejercicio_13.runtimeconfig.dev.json
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\bin\Debug\netcoreapp2.0\Ejercicio_13.dll
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\bin\Debug\netcoreapp2.0\Ejercicio_13.pdb
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\obj\Debug\netcoreapp2.0\Ejercicio_13.dll
+C:\Users\Seba\Desktop\Programacion_2\Clase_02\Ejercicio_13\obj\Debug\netcoreapp2.0\Ejercicio_13.pdb
