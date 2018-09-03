@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Seba\\Desktop\\Programacion_2\\Clase_03\\Clase_03\\Clase_03.csproj",
-      "projectName": "Clase_03",
-      "projectPath": "C:\\Users\\Seba\\Desktop\\Programacion_2\\Clase_03\\Clase_03\\Clase_03.csproj",
+      "projectUniqueName": "C:\\Users\\Seba\\Desktop\\Programacion_2\\Clase_03\\Ejercicio_17\\Ejercicio_17.csproj",
+      "projectName": "Ejercicio_17",
+      "projectPath": "C:\\Users\\Seba\\Desktop\\Programacion_2\\Clase_03\\Ejercicio_17\\Ejercicio_17.csproj",
       "packagesPath": "C:\\Users\\Seba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Seba\\Desktop\\Programacion_2\\Clase_03\\Clase_03\\obj\\",
+      "outputPath": "C:\\Users\\Seba\\Desktop\\Programacion_2\\Clase_03\\Ejercicio_17\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

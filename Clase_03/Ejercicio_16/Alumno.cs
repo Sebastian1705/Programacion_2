@@ -42,6 +42,5 @@ namespace Ejercicio_16
 
             return sb.ToString();
         }
-
     }
 }
