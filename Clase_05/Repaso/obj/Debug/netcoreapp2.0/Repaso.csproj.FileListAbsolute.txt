@@ -1,0 +1,11 @@
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\obj\Debug\netcoreapp2.0\Repaso.csprojAssemblyReference.cache
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\obj\Debug\netcoreapp2.0\Repaso.csproj.CoreCompileInputs.cache
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\obj\Debug\netcoreapp2.0\Repaso.AssemblyInfoInputs.cache
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\obj\Debug\netcoreapp2.0\Repaso.AssemblyInfo.cs
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\bin\Debug\netcoreapp2.0\Repaso.deps.json
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\bin\Debug\netcoreapp2.0\Repaso.runtimeconfig.json
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\bin\Debug\netcoreapp2.0\Repaso.runtimeconfig.dev.json
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\bin\Debug\netcoreapp2.0\Repaso.dll
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\bin\Debug\netcoreapp2.0\Repaso.pdb
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\obj\Debug\netcoreapp2.0\Repaso.dll
+C:\Users\Seba\Desktop\Programacion_2\Clase_05\Repaso\obj\Debug\netcoreapp2.0\Repaso.pdb
