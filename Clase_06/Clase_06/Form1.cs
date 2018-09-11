@@ -68,5 +68,10 @@ namespace Clase_06
 
             this.Mostrar.Text = frmPantalla2.atributoString;
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+              
+        }
     }
 }

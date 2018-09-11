@@ -9,3 +9,4 @@ D:\Programacion_2\Clase_06\Clase_06\obj\Debug\Clase_06.csproj.CoreCompileInputs.
 D:\Programacion_2\Clase_06\Clase_06\obj\Debug\Clase_06.exe
 D:\Programacion_2\Clase_06\Clase_06\obj\Debug\Clase_06.pdb
 D:\Programacion_2\Clase_06\Clase_06\obj\Debug\Clase_06.frmPantalla2.resources
+D:\Programacion_2\Clase_06\Clase_06\obj\Debug\Clase_06.frmFormulario3.resources

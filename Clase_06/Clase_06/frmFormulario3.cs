@@ -16,5 +16,20 @@ namespace Clase_06
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.chkAlgo.Checked.ToString());
+        }
+
+        private void chkAlgo_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void r_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
