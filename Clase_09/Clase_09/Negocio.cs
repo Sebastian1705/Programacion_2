@@ -29,7 +29,7 @@ namespace Clase_09
                 bool x = this + Cliente;
             }
         }
-        
+
         #endregion
 
         #region Methods
@@ -37,6 +37,7 @@ namespace Clase_09
         private Negocio()
         {
             Queue<Cliente> clientes = new Queue<Cliente>();
+            this.caja = new PuestoAtencion(PuestoAtencion.Puesto.Caja1);
         }
 
         public Negocio(string nombre) : this()
