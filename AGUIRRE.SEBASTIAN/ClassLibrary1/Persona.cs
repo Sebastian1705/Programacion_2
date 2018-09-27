@@ -4,8 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace Entidades
 {
+    public enum Departamentos
+    {
+        A, B, C, D, E
+    }
+
     public abstract class Persona
     {
         #region Fields
@@ -24,10 +29,6 @@ namespace ClassLibrary1
             {
                 return this.nombre;
             }
-            set
-            {
-                this.nombre = value;
-            }
         }
 
         public string Documento
@@ -38,7 +39,8 @@ namespace ClassLibrary1
             }
             set
             {
-                this.documento = value;
+                if (ValidarDocumentos(value))
+                    this.documento = value;
             }
         }
 
@@ -47,10 +49,6 @@ namespace ClassLibrary1
             get
             {
                 return this.apellido;
-            }
-            set
-            {
-                this.apellido = value;
             }
         }
 
@@ -65,11 +63,17 @@ namespace ClassLibrary1
             this.documento = documento;
         }
 
-        public string ExponerDatos()
+        public virtual string ExponerDatos()
         {
             string retorno = "";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("Apellido: {0}  Nombre: {1}  Documento: {2}", this.Apellido, this.Nombre, this.Documento);
+            sb.AppendLine("");
+            retorno = sb.ToString();
             return retorno;
         }
+
+        protected abstract bool ValidarDocumentos(string doc);
 
         #endregion
 

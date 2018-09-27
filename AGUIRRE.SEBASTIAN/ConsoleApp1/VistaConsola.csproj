@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AGUIRRE.SEBASTIAN\VistaForm.csproj" />
+    <ProjectReference Include="..\ClassLibrary1\Entidades.csproj" />
+  </ItemGroup>
+
 </Project>
