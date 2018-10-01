@@ -52,7 +52,7 @@ namespace CentralTelefonica
             StringBuilder sb = new StringBuilder();
 
             sb.AppendFormat("{0}", base.Mostrar());
-            sb.AppendFormat("COSTO: ${0}", this.CostoLlamada);
+            sb.AppendFormat(" COSTO: ${0}", this.CostoLlamada);
             sb.AppendLine("");
             return sb.ToString();
         }

@@ -62,8 +62,8 @@ namespace CentralTelefonica
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("{0}", base.Mostrar());
-            sb.AppendFormat("COSTO: ${0}", this.CostoLlamada);
-            sb.AppendFormat("FRANJA HORARIA: {0}", this.franjaHoraria);
+            sb.AppendFormat(" COSTO: ${0}", this.CostoLlamada);
+            sb.AppendFormat(" FRANJA HORARIA: {0}", this.franjaHoraria);
             sb.AppendLine("");
             return sb.ToString();
         }

@@ -56,12 +56,9 @@ namespace CentralTelefonica
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("LLAMADA");
-            sb.AppendLine("-----------------------");
             sb.AppendFormat("NUMERO ORIGEN: {0}", this.nroOrigen);
-            sb.AppendFormat("NUMERO DESTINO: {0}", this.nroDestino);
-            sb.AppendFormat("DURACION: {0}", this.duracion);
+            sb.AppendFormat(" NUMERO DESTINO: {0}", this.nroDestino);
+            sb.AppendFormat(" DURACION: {0}", this.duracion);
             return sb.ToString();
         }
 

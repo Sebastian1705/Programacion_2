@@ -96,9 +96,7 @@ namespace CentralTelefonica
                         retorno = acumLocal + acumProvincial;
                         break;
                 }
-                return retorno;
             }
-
             return retorno;
         }
 
