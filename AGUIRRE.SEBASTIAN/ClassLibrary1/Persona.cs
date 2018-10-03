@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public enum Departamentos
+    public enum Divisiones
     {
         A, B, C, D, E
     }
@@ -31,6 +31,14 @@ namespace Entidades
             }
         }
 
+        public string Apellido
+        {
+            get
+            {
+                return this.apellido;
+            }
+        }
+
         public string Documento
         {
             get
@@ -44,18 +52,10 @@ namespace Entidades
             }
         }
 
-        public string Apellido
-        {
-            get
-            {
-                return this.apellido;
-            }
-        }
-
         #endregion
 
         #region Methods
-        
+
         public Persona(string nombre, string apellido, string documento)
         {
             this.nombre = nombre;
@@ -65,14 +65,11 @@ namespace Entidades
 
         public virtual string ExponerDatos()
         {
-            string retorno = "";
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Apellido: {0}  Nombre: {1}  Documento: {2}", this.Apellido, this.Nombre, this.Documento);
-            sb.AppendLine("");
-            retorno = sb.ToString();
-            return retorno;
+            sb.AppendFormat("Nombre: {0}\tApellido: {1}\tDocumento: {2}\t", this.Nombre, this.Apellido, this.Documento);
+            return sb.ToString();
         }
-
+        
         protected abstract bool ValidarDocumentos(string doc);
 
         #endregion

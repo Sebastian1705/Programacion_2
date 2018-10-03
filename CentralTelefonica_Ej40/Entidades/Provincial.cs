@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +16,7 @@ namespace CentralTelefonica
 
         #region Propieties
 
-        public float CostoLlamada
+        public override float CostoLlamada
         {
             get
             {
@@ -24,11 +24,20 @@ namespace CentralTelefonica
             }
         }
 
-        #endregion
+    public override string ToString()
+    {
+      return this.Mostrar();
 
-        #region Methods
+    public override bool Equals(object obj)
+    {
+      return base.Equals(obj);
+    }
 
-        public Provincial(Franja franjaHoraria, Llamada llamada)
+    #endregion
+
+    #region Methods
+
+    public Provincial(Franja franjaHoraria, Llamada llamada)
             : this(llamada.NroOrigen, llamada.NroDestino, llamada.Duracion, franjaHoraria)
         {
 
