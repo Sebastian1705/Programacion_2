@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aguirre.Sebastian._2D
+namespace Entidades
 {
-    abstract class Mascota
+    public abstract class Mascota
     {
         #region Fields
 
-        private string nombre;
-        private string raza;
+        string nombre;
+        string raza;
 
         #endregion
 
         #region Propieties
-
-       public string Nombre
+        
+        public string Nombre
         {
             get
             {
@@ -32,10 +32,29 @@ namespace Aguirre.Sebastian._2D
                 return this.raza;
             }
         }
+        /*
+        public int MyProperty
+        {
+            get;
+            {
 
+            }
+            set;
+            {
+
+            }
+        }
+        */
         #endregion
 
         #region Methods
+
+        protected abstract string Ficha();
+     
+        protected virtual string DatosCompletos()
+        {
+            return String.Format("{0} {1}", this.Nombre, this.Raza);
+        }
 
         public Mascota(string nombre, string raza)
         {
@@ -43,12 +62,11 @@ namespace Aguirre.Sebastian._2D
             this.raza = raza;
         }
 
-        protected abstract string Ficha();
+        #endregion
 
-        /*virtual protected string DatosCompletos()
-        {
+        #region Nested Types
 
-        }*/
+
 
         #endregion
     }

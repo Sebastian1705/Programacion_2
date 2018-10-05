@@ -39,7 +39,10 @@ namespace Entidades
         public override string ExponerDatos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("{0}\tAnio / Division: {1}\t", base.ExponerDatos(),this.AnioDivision);
+            //sb.AppendFormat("{0}\tAnio / Division: {1}\t", base.ExponerDatos(),this.AnioDivision);
+            sb.AppendLine(base.ExponerDatos());
+            //sb.AppendLine("Anio/Division: " + this.AnioDivision);
+           
             return sb.ToString();
         }
 

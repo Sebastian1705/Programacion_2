@@ -42,7 +42,10 @@ namespace Entidades
         public override string ExponerDatos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("{0}\tAntiguedad: {1}", base.ExponerDatos(), this.Antiguedad);
+            //sb.AppendFormat("{0}\tAntiguedad: {1}", base.ExponerDatos(), this.Antiguedad);
+
+            sb.AppendLine(base.ExponerDatos());
+            sb.AppendLine("Antiguedad: " + Antiguedad);
             return sb.ToString();
         }
 
