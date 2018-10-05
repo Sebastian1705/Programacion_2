@@ -17,19 +17,15 @@ namespace Entidades
         #endregion
 
         #region Propieties
-        /*
-        public int MyProperty
+        
+        public TipoManada TipoManada
         {
-            get;
+            set
             {
-
-            }
-            set;
-            {
-
+                this.tipo = value;
             }
         }
-
+        /*
         public int MyProperty
         {
             get;
@@ -75,6 +71,7 @@ namespace Entidades
         {
             this.tipo = tipo;
         }
+
 
 
         #endregion
