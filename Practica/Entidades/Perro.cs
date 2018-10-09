@@ -40,19 +40,7 @@ namespace Entidades
                 this.esAlfa = value;
             }
         }
-        /*
-        public int MyProperty
-        {
-            get;
-            {
-
-            }
-            set;
-            {
-
-            }
-        }
-        */
+        
         #endregion
 
         #region Methods
@@ -124,12 +112,6 @@ namespace Entidades
         {
             return this.ToString().GetHashCode();
         }
-
-        #endregion
-
-        #region Nested Types
-
-
 
         #endregion
     }

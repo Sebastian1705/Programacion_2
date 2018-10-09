@@ -17,7 +17,7 @@ namespace Entidades
         #endregion
 
         #region Propieties
-        
+
         public TipoManada TipoManada
         {
             set
@@ -25,31 +25,7 @@ namespace Entidades
                 this.tipo = value;
             }
         }
-        /*
-        public int MyProperty
-        {
-            get;
-            {
 
-            }
-            set;
-            {
-
-            }
-        }
-       
-        public int MyProperty
-        {
-            get;
-            {
-
-            }
-            set;
-            {
-
-            }
-        }
-         */
         #endregion
 
         #region Methods
@@ -61,24 +37,74 @@ namespace Entidades
         }
 
         public Grupo(string nombre)
-            :this()
+            : this()
         {
             this.nombre = nombre;
         }
 
         public Grupo(string nombre, TipoManada tipo)
-            :this(nombre)
+            : this(nombre)
         {
             this.tipo = tipo;
         }
 
+        public static implicit operator string(Grupo e)
+        {
+            StringBuilder sb = new StringBuilder();
+            if (!Object.ReferenceEquals(e, null))
+            {
+                sb.AppendLine("");
+            }
+            return sb.ToString();
+        }
 
+        public static bool operator ==(Grupo e, Mascota j)
+        {
+            bool retorno = false;
+            if (!Object.ReferenceEquals(e, null) && !Object.ReferenceEquals(j, null))
+            {
+                foreach (Mascota item in e.manada)
+                {
+                    if (item == j)
+                    {
+                        retorno = true;
+                        break;
+                    }
+                }
+            }
+            return retorno;
+        }
 
-        #endregion
+        public static bool operator !=(Grupo e, Mascota j)
+        {
+            return !(e == j);
+        }
 
-        #region Nested Types
+        public static Grupo operator +(Grupo e, Mascota j)
+        {
+            foreach(Mascota item in e.manada)
+            {
+                if(item == j)
+                {
+                    return e;
+                }
+            }
+            e.manada.Add(j);
+            return e;
+        }
 
-
+        public static Grupo operator -(Grupo e, Mascota j)
+        {
+            foreach (Mascota item in e.manada)
+            {
+                if (item == j)
+                {
+                    e.manada.Remove(j);
+                    return e;
+                }
+            }
+            return e;
+        }
 
         #endregion
     }

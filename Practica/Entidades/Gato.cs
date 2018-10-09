@@ -8,52 +8,6 @@ namespace Entidades
 {
     public class Gato : Mascota
     {
-        #region Fields
-
-
-
-        #endregion
-
-        #region Propieties
-        /*
-        public int MyProperty
-        {
-            get;
-            {
-
-            }
-            set;
-            {
-
-            }
-        }
-
-        public int MyProperty
-        {
-            get;
-            {
-
-            }
-            set;
-            {
-
-            }
-        }
-
-        public int MyProperty
-        {
-            get;
-            {
-
-            }
-            set;
-            {
-
-            }
-        }
-        */
-        #endregion
-
         #region Methods
 
         public Gato(string nombre, string raza)
@@ -101,12 +55,6 @@ namespace Entidades
         {
             return this.Ficha();
         }
-
-        #endregion
-
-        #region Nested Types
-
-
 
         #endregion
     }

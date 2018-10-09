@@ -32,19 +32,7 @@ namespace Entidades
                 return this.raza;
             }
         }
-        /*
-        public int MyProperty
-        {
-            get;
-            {
-
-            }
-            set;
-            {
-
-            }
-        }
-        */
+      
         #endregion
 
         #region Methods
@@ -61,12 +49,6 @@ namespace Entidades
             this.nombre = nombre;
             this.raza = raza;
         }
-
-        #endregion
-
-        #region Nested Types
-
-
 
         #endregion
     }
