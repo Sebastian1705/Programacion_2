@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Entidades
 {
     public class Gato : Mascota
-    {
+    {      
         #region Methods
 
         public Gato(string nombre, string raza)

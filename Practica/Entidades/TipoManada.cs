@@ -8,6 +8,6 @@ namespace Entidades
 {
     public enum TipoManada
     {
-      Unica, Mixta
+        Unica, Mixta
     }
 }

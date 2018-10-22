@@ -40,7 +40,7 @@ namespace Entidades
                 this.esAlfa = value;
             }
         }
-        
+       
         #endregion
 
         #region Methods

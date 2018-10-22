@@ -1,0 +1,10 @@
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\CentralTelefonica_Ej40\Test\bin\Debug\Test.exe.config
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\CentralTelefonica_Ej40\Test\bin\Debug\Test.exe
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\CentralTelefonica_Ej40\Test\bin\Debug\Test.pdb
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\CentralTelefonica_Ej40\Test\bin\Debug\Entidades.dll
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\CentralTelefonica_Ej40\Test\bin\Debug\Entidades.pdb
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\CentralTelefonica_Ej40\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\CentralTelefonica_Ej40\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\CentralTelefonica_Ej40\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\CentralTelefonica_Ej40\Test\obj\Debug\Test.exe
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\CentralTelefonica_Ej40\Test\obj\Debug\Test.pdb

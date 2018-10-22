@@ -63,7 +63,7 @@ namespace CentralTelefonica
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("Origen: {0}\t Destino: {1}\t Duracion: {2}", this.NroOrigen, this.nroDestino, this.Duracion.ToString());
             return sb.ToString();
-    }
+        }
 
         public static int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
         {

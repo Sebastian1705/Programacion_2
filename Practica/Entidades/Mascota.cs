@@ -32,7 +32,7 @@ namespace Entidades
                 return this.raza;
             }
         }
-      
+   
         #endregion
 
         #region Methods

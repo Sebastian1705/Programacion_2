@@ -56,14 +56,14 @@ namespace CentralTelefonica
 
         public override string ToString()
         {
-          return base.ToString();
+            return this.Mostrar();
         }
 
-    public override bool Equals(object obj)
-    {
-      return base.Equals(obj);
-    }
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
 
-    #endregion
+        #endregion
   }
 }

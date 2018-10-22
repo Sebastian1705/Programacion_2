@@ -114,12 +114,12 @@ namespace CentralTelefonica
                 if (llamada is Local)
                 {
                     Local aux = (Local)llamada;
-                    sb.AppendLine(aux.Mostrar().ToString());
+                    sb.AppendLine(aux.ToString());
                 }
                 else if (llamada is Provincial)
                 {
                     Provincial aux = (Provincial)llamada;
-                    sb.AppendLine(aux.Mostrar().ToString());
+                    sb.AppendLine(aux.ToString());
                 }
             }
             return sb.ToString();

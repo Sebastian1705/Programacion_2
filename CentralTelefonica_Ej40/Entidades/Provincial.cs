@@ -24,20 +24,21 @@ namespace CentralTelefonica
             }
         }
 
-    public override string ToString()
-    {
-      return this.Mostrar();
+        public override string ToString()
+        {
+            return this.Mostrar();
+        }
 
     public override bool Equals(object obj)
     {
-      return base.Equals(obj);
+        return base.Equals(obj);
     }
 
     #endregion
 
     #region Methods
 
-    public Provincial(Franja franjaHoraria, Llamada llamada)
+        public Provincial(Franja franjaHoraria, Llamada llamada)
             : this(llamada.NroOrigen, llamada.NroDestino, llamada.Duracion, franjaHoraria)
         {
 
@@ -67,7 +68,7 @@ namespace CentralTelefonica
             return retorno;
         }
 
-        public string Mostrar()
+        protected override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("{0}", base.Mostrar());
@@ -76,6 +77,7 @@ namespace CentralTelefonica
             sb.AppendLine("");
             return sb.ToString();
         }
+
 
         #endregion
 
