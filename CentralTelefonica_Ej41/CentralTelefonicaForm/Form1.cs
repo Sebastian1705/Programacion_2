@@ -13,7 +13,13 @@ namespace CentralTelefonicaForm
 {
     public partial class frmCentralTelefonica : Form
     {
-        Centralita centralita;
+        #region Fields
+
+        private Centralita centralita;
+
+        #endregion
+
+        #region Methods
 
         public frmCentralTelefonica()
         {
@@ -22,7 +28,21 @@ namespace CentralTelefonicaForm
 
         private void btnGenararLlamada_Click(object sender, EventArgs e)
         {
-
+            FrmLlamador llamador = new FrmLlamador(this.centralita);
+            llamador.ShowDialog();
+            this.centralita = llamador.Centralita;
         }
+
+        private void frmCentralTelefonica_Load(object sender, EventArgs e)
+        {
+            centralita = new Centralita("Sebastian");
+        }
+
+        private void bntSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        #endregion
     }
 }

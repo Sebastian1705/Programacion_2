@@ -1,0 +1,10 @@
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Test\bin\Debug\Test.exe.config
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Test\bin\Debug\Test.exe
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Test\bin\Debug\Test.pdb
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Test\bin\Debug\Clase_17.dll
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Test\bin\Debug\Clase_17.pdb
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Test\obj\Debug\Test.exe
+C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Test\obj\Debug\Test.pdb

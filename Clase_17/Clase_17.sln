@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase_17", "Clase_17\Clase_17.csproj", "{43E43059-9916-48AB-A78C-619BC4741498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{3119AB1D-BFE6-457F-BD40-6B524F55E819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnitario", "TestUnitario\TestUnitario.csproj", "{2B40B82E-5942-4EB4-B700-6BF6DEAE61E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43E43059-9916-48AB-A78C-619BC4741498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E43059-9916-48AB-A78C-619BC4741498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E43059-9916-48AB-A78C-619BC4741498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E43059-9916-48AB-A78C-619BC4741498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3119AB1D-BFE6-457F-BD40-6B524F55E819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3119AB1D-BFE6-457F-BD40-6B524F55E819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3119AB1D-BFE6-457F-BD40-6B524F55E819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3119AB1D-BFE6-457F-BD40-6B524F55E819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B40B82E-5942-4EB4-B700-6BF6DEAE61E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B40B82E-5942-4EB4-B700-6BF6DEAE61E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B40B82E-5942-4EB4-B700-6BF6DEAE61E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B40B82E-5942-4EB4-B700-6BF6DEAE61E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E1F1044-E61D-412B-A73C-689CF4F18EE9}
+	EndGlobalSection
+EndGlobal

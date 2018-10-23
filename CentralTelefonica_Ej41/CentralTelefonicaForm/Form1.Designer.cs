@@ -85,6 +85,7 @@
             this.bntSalir.TabIndex = 4;
             this.bntSalir.Text = "Salir";
             this.bntSalir.UseVisualStyleBackColor = true;
+            this.bntSalir.Click += new System.EventHandler(this.bntSalir_Click);
             // 
             // frmCentralTelefonica
             // 
@@ -97,7 +98,9 @@
             this.Controls.Add(this.btnFacturacionTotal);
             this.Controls.Add(this.btnGenararLlamada);
             this.Name = "frmCentralTelefonica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Central Telefonica";
+            this.Load += new System.EventHandler(this.frmCentralTelefonica_Load);
             this.ResumeLayout(false);
 
         }
