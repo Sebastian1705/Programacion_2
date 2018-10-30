@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace IO
+{
+    public class ArchivoIncorrectoException : Exception
+    {
+        #region Methods
+
+        public ArchivoIncorrectoException(string mensaje)
+            : base(mensaje)
+        {
+
+        }
+
+        public ArchivoIncorrectoException(string mensaje, Exception innerException)
+          : base(mensaje, innerException)
+        {
+
+        }
+
+        #endregion
+    }
+}
