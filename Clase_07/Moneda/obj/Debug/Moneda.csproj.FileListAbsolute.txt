@@ -1,6 +1,0 @@
-C:\Users\Seba\Desktop\Programacion_2\Clase_07\Moneda\bin\Debug\Moneda.dll
-C:\Users\Seba\Desktop\Programacion_2\Clase_07\Moneda\bin\Debug\Moneda.pdb
-C:\Users\Seba\Desktop\Programacion_2\Clase_07\Moneda\obj\Debug\Moneda.csprojAssemblyReference.cache
-C:\Users\Seba\Desktop\Programacion_2\Clase_07\Moneda\obj\Debug\Moneda.csproj.CoreCompileInputs.cache
-C:\Users\Seba\Desktop\Programacion_2\Clase_07\Moneda\obj\Debug\Moneda.dll
-C:\Users\Seba\Desktop\Programacion_2\Clase_07\Moneda\obj\Debug\Moneda.pdb

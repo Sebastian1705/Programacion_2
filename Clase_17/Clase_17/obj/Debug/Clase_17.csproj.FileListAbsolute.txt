@@ -1,6 +1,0 @@
-C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Clase_17\obj\Debug\Clase_17.csprojAssemblyReference.cache
-C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Clase_17\obj\Debug\Clase_17.csproj.CoreCompileInputs.cache
-C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Clase_17\bin\Debug\Clase_17.dll
-C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Clase_17\bin\Debug\Clase_17.pdb
-C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Clase_17\obj\Debug\Clase_17.dll
-C:\Users\Seba\Documents\Utn\Programacion\Programacion_2\Clase_17\Clase_17\obj\Debug\Clase_17.pdb
