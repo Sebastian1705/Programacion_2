@@ -44,6 +44,7 @@
     <Compile Include="ArchiveroFisico.cs" />
     <Compile Include="Archivo.cs" />
     <Compile Include="DiscoElectronico.cs" />
+    <Compile Include="IAlmacenable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

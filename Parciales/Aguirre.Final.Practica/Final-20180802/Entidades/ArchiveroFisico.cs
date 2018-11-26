@@ -13,9 +13,53 @@ namespace Entidades
     //El método Guardar deberá guardar un objeto de tipo archivo en un archivo de texto en la ubicación definida en el atributo pathArchivos.
     //El método Leer recibirá el nombre de un archivo y deberá retornar su contenido.
     //Tanto en Leer como en Guardar capturar y relanzar las excepciones.
-    public class ArchiveroFisico
+    public class ArchiveroFisico : Almacenador, IAlmacenable<string, Archivo>
     {
+        #region Fields
+
         private string pathArchivos;
 
+        #endregion
+
+        #region Propieties
+
+        public string PathArchivos
+        {
+            get
+            {
+                return this.pathArchivos;
+            }
+            set
+            {
+                this.pathArchivos = value;
+            }
+        }
+
+        #endregion
+
+        #region Methods
+
+        public ArchiveroFisico(string path, int capacidad)
+            : base(capacidad)
+        {
+            this.Capacidad = capacidad;
+        }
+
+        public override void MostrarArchivos()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Guardar(Archivo elemento)
+        {
+            return true;
+        }
+
+        public string Leer(string path)
+        {
+            return "";
+        }
+
+        #endregion
     }
 }
