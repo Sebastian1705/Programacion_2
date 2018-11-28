@@ -51,13 +51,47 @@ namespace Entidades
         }
 
         public bool Guardar(Archivo elemento)
-        {
+        {    
+            StreamWriter sw = new StreamWriter(this.PathArchivos, File.Exists(this.PathArchivos));
+            try
+            {
+                if(!(sw is null))
+                {
+                    sw.WriteLine(elemento.Contenido);
+                    //sw.WriteLine(elemento.ToString());
+                }
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                sw.Close();
+            }
             return true;
         }
 
         public string Leer(string path)
         {
-            return "";
+            string retorno = null;
+            if (File.Exists(path))
+            {
+                StreamReader sr = new StreamReader(path);
+                try
+                {
+                    retorno = sr.ReadToEnd();
+                }
+                catch(Exception e)
+                {
+                    throw e;
+                }
+                finally
+                {
+                    sr.Close();
+                }
+            }
+            return retorno;
         }
 
         #endregion

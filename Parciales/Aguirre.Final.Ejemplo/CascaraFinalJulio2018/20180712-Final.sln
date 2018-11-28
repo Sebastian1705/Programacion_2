@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VistaForm", "VistaForm\Vist
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{9640F805-EB43-476F-AEA4-FC26310F505B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepciones", "Excepciones\Excepciones.csproj", "{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,8 +53,27 @@ Global
 		{9640F805-EB43-476F-AEA4-FC26310F505B}.Release|x64.Build.0 = Release|Any CPU
 		{9640F805-EB43-476F-AEA4-FC26310F505B}.Release|x86.ActiveCfg = Release|Any CPU
 		{9640F805-EB43-476F-AEA4-FC26310F505B}.Release|x86.Build.0 = Release|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Debug|ARM.Build.0 = Debug|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Debug|x64.Build.0 = Debug|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Debug|x86.Build.0 = Debug|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Release|ARM.ActiveCfg = Release|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Release|ARM.Build.0 = Release|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Release|x64.ActiveCfg = Release|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Release|x64.Build.0 = Release|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Release|x86.ActiveCfg = Release|Any CPU
+		{2EDB0FB5-004F-4FDB-A126-5B4506ABD259}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {373CF98A-AC96-404B-923B-BF7512FB2000}
 	EndGlobalSection
 EndGlobal

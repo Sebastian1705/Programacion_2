@@ -51,7 +51,7 @@ namespace Entidades
         /// <returns></returns>
         public virtual string Mostrar()
         {
-            return String.Format($"DESCRIPCIÓN: {this.Descripcion}.");
+            return String.Format($"DESCRIPCIÓN: {this.Descripcion}");
         }
 
         /// <summary>
@@ -63,6 +63,8 @@ namespace Entidades
             ProductoDAO.GuardarProducto(this);
             this.InformarProductoTerminado.Invoke(this, new EventArgs());
         }
+
+        public abstract bool ValidarDimensiones();
 
         #endregion
 

@@ -46,7 +46,24 @@ namespace Entidades
 
         public static bool GuardarProducto(Producto p)
         {
-            return true;
+            bool retorno = false;
+            if(!(p is null))
+            {
+                try
+                {
+                    conexion.Open();
+                }
+                catch (Exception e)
+                {
+                    throw e;
+                }
+                finally
+                {
+
+                }
+                retorno = true;
+            }
+            return retorno;
         }
 
         #endregion

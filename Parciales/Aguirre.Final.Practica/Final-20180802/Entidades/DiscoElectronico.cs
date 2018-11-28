@@ -13,15 +13,31 @@ namespace Entidades
     //e.El método MostrarArchivos por el momento sólo deberá recorrer la lista de archivos y por cada uno simular un retardo de 5 segundos.
     //f.Agregar un constructor en el cual se deberá cargar la lista a partir de los datos guardados en la base.
     //g.Sobrecargar el operador + para agregar un archivo a la lista siempre y cuando no supere la capacidad, caso contrario lanzará una excepción con el mensaje "El disco está lleno!".
-    public class DiscoElectronico
+    public class DiscoElectronico : Almacenador
     {
-        public List<Archivo> archivosGuardados;
+        private List<Archivo> archivosGuardados;
 
-        private DiscoElectronico()
+        public List<Archivo> ArchivosGuardados
         {
-
+            get
+            {
+                return this.archivosGuardados;
+            }
+            set
+            {
+                this.archivosGuardados = value;
+            }
         }
 
+        private DiscoElectronico(int capacidad)
+            : base(capacidad)
+        {
+            this.ArchivosGuardados = new List<Archivo>();
+        }
 
+        public override void MostrarArchivos()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

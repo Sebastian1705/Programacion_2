@@ -58,6 +58,11 @@ namespace Entidades
             return string.Format($"Nombre: {this.Nombre} - Contenido: {this.Contenido}");
         }
 
+        public static explicit operator string(Archivo a)
+        {
+            return a.ToString();
+        }
+
         #endregion
     }
 }
