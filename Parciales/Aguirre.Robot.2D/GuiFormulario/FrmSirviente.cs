@@ -29,17 +29,7 @@ namespace GuiFormulario
         {
             if (!(lblEnergia.Text is null) && !(lblOrigen.Text is null))
             {
-                int energia;
-                if(int.TryParse(lblEnergia.Text, out energia))
-                {
-                    RobotSirviente nuevoRobot = new RobotSirviente(energia, lblOrigen.Text);
-                   
-                    MessageBox.Show(nuevoRobot.ServirHumanidad());
-                    
-                        
-                }
-                else
-                    MessageBox.Show("No se creo robot");
+                
             }
         }
     }

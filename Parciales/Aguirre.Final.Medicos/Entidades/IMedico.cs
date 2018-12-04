@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public interface IAlmacenable<T,V>
+    public interface IMedico
     {
         #region Methods
 
-        bool Guardar(V elemento);
-
-        T Leer(string path);
+        void IniciarAtencion(Paciente p);
 
         #endregion
     }

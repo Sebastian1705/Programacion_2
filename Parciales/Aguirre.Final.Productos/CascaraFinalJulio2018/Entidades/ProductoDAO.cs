@@ -59,7 +59,7 @@ namespace Entidades
                 }
                 finally
                 {
-
+                    conexion.Close();
                 }
                 retorno = true;
             }
