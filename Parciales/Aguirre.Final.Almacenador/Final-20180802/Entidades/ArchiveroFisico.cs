@@ -7,12 +7,6 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    //Deberá heredar de Almacenador e implementar IAlmacenable.
-    //Crear un constructor que reciba y asigne el/los atributos de la misma.
-    //El método MostrarArchivos lanzará una excepción del tipo NotImplementedException.
-    //El método Guardar deberá guardar un objeto de tipo archivo en un archivo de texto en la ubicación definida en el atributo pathArchivos.
-    //El método Leer recibirá el nombre de un archivo y deberá retornar su contenido.
-    //Tanto en Leer como en Guardar capturar y relanzar las excepciones.
     public class ArchiveroFisico : Almacenador, IAlmacenable<string, Archivo>
     {
         #region Fields
@@ -39,17 +33,30 @@ namespace Entidades
 
         #region Methods
 
+        /// <summary>
+        /// Crear un constructor que reciba y asigne el/los atributos de la misma.
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="capacidad"></param>
         public ArchiveroFisico(string path, int capacidad)
             : base(capacidad)
         {
             this.Capacidad = capacidad;
         }
 
+        /// <summary>
+        /// El método MostrarArchivos lanzará una excepción del tipo NotImplementedException.
+        /// </summary>
         public override void MostrarArchivos()
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// El método Guardar deberá guardar un objeto de tipo archivo en un archivo de texto en la ubicación definida en el atributo pathArchivos.
+        /// </summary>
+        /// <param name="elemento"></param>
+        /// <returns></returns>
         public bool Guardar(Archivo elemento)
         {    
             StreamWriter sw = new StreamWriter(this.PathArchivos, File.Exists(this.PathArchivos));
@@ -72,6 +79,11 @@ namespace Entidades
             return true;
         }
 
+        /// <summary>
+        /// El método Leer recibirá el nombre de un archivo y deberá retornar su contenido.
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public string Leer(string path)
         {
             string retorno = null;

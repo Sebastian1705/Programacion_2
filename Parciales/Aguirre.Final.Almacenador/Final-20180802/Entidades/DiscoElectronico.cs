@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Data.SqlClient;
 
 namespace Entidades
 {
@@ -12,6 +13,9 @@ namespace Entidades
         #region Fields
 
         private List<Archivo> archivosGuardados;
+        private static SqlCommand comando;
+        private static SqlConnection conexion;
+        private static SqlDataReader reader;
 
         #endregion
 
@@ -55,9 +59,30 @@ namespace Entidades
         /// <returns></returns>
         public List<Archivo> Leer(string path)
         {
-            List<Archivo> retorno = null;
-
-            return retorno;
+            string nombre, contenido;
+            try
+            {
+                conexion = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=final-20180802;Integrated Security=True");
+                comando = new SqlCommand(string.Format("SELECT * FROM '{0}'", path));
+                conexion.Open();
+                reader = comando.ExecuteReader();
+                while(reader.Read())
+                {
+                    nombre = reader.GetString(1);
+                    contenido = reader.GetString(2);
+                    Archivo a = new Archivo(nombre, contenido);
+                    
+                }
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+            return this.ArchivosGuardados;
         }
 
         /// <summary>
@@ -67,6 +92,7 @@ namespace Entidades
         /// <returns></returns>
         public bool Guardar(Archivo a)
         {
+
             return true;
         }
 
@@ -76,6 +102,10 @@ namespace Entidades
         /// </summary>
         public static DiscoElectronico operator +(DiscoElectronico d, Archivo a)
         {
+            if (d.ArchivosGuardados.Count < d.Capacidad)
+                d.ArchivosGuardados.Add(a);
+            else
+                throw new Exception("El disco está lleno!");
             return d;
         }
 
