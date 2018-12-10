@@ -37,10 +37,16 @@ namespace Entidades
 
         #region Methods
     
-        private DiscoElectronico(int capacidad)
-            : base(capacidad)
+        private DiscoElectronico()
+            : this(5)
         {
             this.ArchivosGuardados = new List<Archivo>();
+        }
+
+        public DiscoElectronico(int capacidad)
+            : base(capacidad)
+        {
+            this.ArchivosGuardados = this.Leer("Archivo");
         }
 
         /// <summary>
@@ -92,7 +98,21 @@ namespace Entidades
         /// <returns></returns>
         public bool Guardar(Archivo a)
         {
-
+            try
+            {
+                conexion = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=final-20180802;Integrated Security=True");
+                comando = new SqlCommand(string.Format("INSERT INTO Archivo(nombre, contenido) VALUES('{0}', '{1}')" ,a.Nombre, a.Contenido));
+                conexion.Open();
+                comando.ExecuteNonQuery();
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                conexion.Close();
+            }
             return true;
         }
 

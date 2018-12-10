@@ -14,8 +14,40 @@ namespace VistaForm
 {
     public partial class FormArchivos : Form
     {
-        DiscoElectronico electronico;
-        ArchiveroFisico fisico;
+        #region Fields 
+
+        private DiscoElectronico electronico;
+        private ArchiveroFisico fisico;
+
+        #endregion
+
+        #region Propieties
+
+        public DiscoElectronico Electronico
+        {
+            get
+            {
+                return this.electronico;
+            }
+            set
+            {
+                this.electronico = value;
+            }
+        }
+
+        public ArchiveroFisico Fisico
+        {
+            get
+            {
+                return this.fisico;
+            }
+            set
+            {
+                this.fisico = value;
+            }
+        }
+
+        #endregion
 
         public FormArchivos()
         {
@@ -25,7 +57,8 @@ namespace VistaForm
         //a.En el evento Load del formulario instanciar el DiscoElectrónico y el ArchiveroFísico del Form con capacidad para 3 archivos c/uno.
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.Fisico = new ArchiveroFisico(this.txtNombreArchivo.Text, 3);
+            this.Electronico = new DiscoElectronico(3);
         }
 
         //instanciar un archivo a partir de los datos obtenidos de los controles del formulario.

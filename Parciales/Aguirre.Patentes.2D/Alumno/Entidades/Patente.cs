@@ -8,20 +8,14 @@ namespace Entidades
 {
     public class Patente
     {
-        public enum Tipo
-        {
-            Vieja, Mercosur
-        }
+        #region Fields
+
         private Tipo tipoCodigo;
         private string codPatente;
 
-        public Patente() { }
+        #endregion
 
-        public Patente(string codPatente, Tipo tipo)
-        {
-            this.CodigoPatente = codPatente;
-            this.TipoCodigo = tipo;
-        }
+        #region Propieties
 
         public string CodigoPatente
         {
@@ -47,9 +41,32 @@ namespace Entidades
             }
         }
 
+        #endregion
+
+        #region Methods
+
+        public Patente() { }
+
+        public Patente(string codPatente, Tipo tipo)
+        {
+            this.CodigoPatente = codPatente;
+            this.TipoCodigo = tipo;
+        }
+
         public override string ToString()
         {
             return this.CodigoPatente;
         }
+
+        #endregion
+
+        #region Nested Types
+
+        public enum Tipo
+        {
+            Vieja, Mercosur
+        }
+
+        #endregion    
     }
 }

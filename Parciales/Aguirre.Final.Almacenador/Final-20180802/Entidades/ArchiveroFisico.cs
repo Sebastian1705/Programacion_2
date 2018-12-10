@@ -58,15 +58,13 @@ namespace Entidades
         /// <param name="elemento"></param>
         /// <returns></returns>
         public bool Guardar(Archivo elemento)
-        {    
-            StreamWriter sw = new StreamWriter(this.PathArchivos, File.Exists(this.PathArchivos));
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            path += @"\" + elemento.Nombre;
+            StreamWriter sw = new StreamWriter(path, File.Exists(path));
             try
             {
-                if(!(sw is null))
-                {
-                    sw.WriteLine(elemento.Contenido);
-                    //sw.WriteLine(elemento.ToString());
-                }
+                sw.WriteLine(elemento.Contenido);
             }
             catch(Exception e)
             {
@@ -87,12 +85,13 @@ namespace Entidades
         public string Leer(string path)
         {
             string retorno = null;
+            StreamReader sr = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "/" + path);
             if (File.Exists(path))
             {
-                StreamReader sr = new StreamReader(path);
                 try
                 {
-                    retorno = sr.ReadToEnd();
+                    if(!(sr is null))
+                        retorno = sr.ReadToEnd();
                 }
                 catch(Exception e)
                 {
