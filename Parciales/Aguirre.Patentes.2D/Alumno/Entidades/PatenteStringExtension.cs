@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace Entidades
 {
-    class PatenteStringExtension
+    public static class PatenteStringExtension
     {
         #region Fields
 

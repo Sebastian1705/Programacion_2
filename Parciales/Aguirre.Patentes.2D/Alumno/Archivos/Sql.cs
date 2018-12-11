@@ -52,7 +52,7 @@ namespace Archivos
 
         public void Leer(string tabla, out Queue<Patente> datos)
         {
-            string patente, tipo;
+            string patente;
             datos = new Queue<Patente>();
             Patente p = null;
             try
@@ -63,8 +63,7 @@ namespace Archivos
                 while(reader.Read())
                 {
                     patente = reader.GetString(1);
-                    tipo = reader.GetString(2);
-                    //p = new Patente(patente, )
+                    p = patente.ValidarPatente();
                     datos.Enqueue(p);
                 }
             }
