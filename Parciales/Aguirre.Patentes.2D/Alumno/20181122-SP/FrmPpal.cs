@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using Entidades;
 using Archivos;
 using System.Threading;
@@ -16,12 +15,19 @@ namespace _20181122_SP
 {
     public partial class FrmPpal : Form
     {
-        Queue<Patente> cola;
+        #region Fields 
+
+        private Queue<Patente> cola;
+        private List<Thread> lista;
+
+        #endregion
+
+        #region Methods
 
         public FrmPpal()
         {
             InitializeComponent();
-
+            this.lista = new List<Thread>();
             this.cola = new Queue<Patente>();
         }
 
@@ -32,6 +38,7 @@ namespace _20181122_SP
 
         private void FrmPpal_FormClosing(object sender, FormClosingEventArgs e)
         {
+            this.FinalizarSimulacion();
         }
 
         private void btnXml_Click(object sender, EventArgs e)
@@ -51,7 +58,13 @@ namespace _20181122_SP
 
         private void FinalizarSimulacion()
         {
-
+            foreach (Thread item in this.lista)
+            {
+                if (item.IsAlive)
+                    item.Abort();
+            }
         }
+
+        #endregion
     }
 }

@@ -52,7 +52,6 @@ namespace Archivos
 
         public void Leer(string tabla, out Queue<Patente> datos)
         {
-            string patente;
             datos = new Queue<Patente>();
             Patente p = null;
             try
@@ -62,12 +61,15 @@ namespace Archivos
                 reader = comando.ExecuteReader();
                 while(reader.Read())
                 {
-                    patente = reader.GetString(1);
-                    p = patente.ValidarPatente();
+                    p = PatenteStringExtension.ValidarPatente(reader.GetString(1));
                     datos.Enqueue(p);
                 }
             }
-            catch(Exception e)
+            catch (PatenteInvalidaException pE)
+            {
+                throw pE;
+            }
+            catch (Exception e)
             {
                 throw e;
             }

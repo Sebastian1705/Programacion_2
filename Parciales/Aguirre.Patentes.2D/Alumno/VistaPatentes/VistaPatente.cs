@@ -13,12 +13,14 @@ using Entidades;
 
 namespace Patentes
 {
+    public delegate void FinExposicionPatente(VistaPatente vp);
+    public delegate void MostrarPatente(object patente);
+
     public partial class VistaPatente : UserControl
     {        
         public VistaPatente()
         {
             InitializeComponent();
-
             picPatente.Image = fondosPatente.Images[(int)Patente.Tipo.Mercosur];
         }
 
@@ -46,5 +48,7 @@ namespace Patentes
                 lblPatenteNro.Text = patente.ToString();
             }
         }
+
+        public event FinExposicionPatente finExposicion;
     }
 }
