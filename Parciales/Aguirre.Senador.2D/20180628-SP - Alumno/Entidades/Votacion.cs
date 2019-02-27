@@ -142,7 +142,7 @@ namespace Entidades
 
         #endregion
 
-        #region
+        #region Events
 
         public event Voto EventoVotoEfectuado;
 

@@ -58,7 +58,7 @@ namespace Entidades
             finally
             {
                 //Se cierra el objeto writer
-                if(!(writer is null))
+                if(!(writer is null)) 
                     writer.Close();
             }
             return true;
